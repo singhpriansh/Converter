@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit & Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Unit & Currency Converter</h1>
+            <p>Convert currencies and units with an easy single-page app.</p>
+        </header>
+
+        <section class="card">
+            <h2>Currency Converter</h2>
+            <div class="form-row">
+                <label>Amount</label>
+                <input id="currencyAmount" type="number" step="any" value="1">
+            </div>
+            <div class="form-row">
+                <label>From</label>
+                <select id="currencyFrom"></select>
+            </div>
+            <div class="form-row">
+                <label>To</label>
+                <select id="currencyTo"></select>
+            </div>
+            <button id="currencyConvert">Convert Currency</button>
+            <p class="result" id="currencyResult"></p>
+        </section>
+
+        <section class="card">
+            <h2>Unit Converter</h2>
+            <div class="form-row">
+                <label>Category</label>
+                <select id="unitCategory"></select>
+            </div>
+            <div class="form-row">
+                <label>Value</label>
+                <input id="unitValue" type="number" step="any" value="1">
+            </div>
+            <div class="form-row">
+                <label>From</label>
+                <select id="unitFrom"></select>
+            </div>
+            <div class="form-row">
+                <label>To</label>
+                <select id="unitTo"></select>
+            </div>
+            <button id="unitConvert">Convert Unit</button>
+            <p class="result" id="unitResult"></p>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
