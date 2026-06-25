@@ -48,8 +48,8 @@ def currency_convert(from_currency, to_currency, amount):
 
     try:
         amount = float(amount)
-    except (TypeError, ValueError):
-        raise ValueError("Amount must be a number")
+    except (TypeError, ValueError) as exc:
+        raise ValueError("Amount must be a number") from exc
 
     base_amount = amount / CURRENCY_RATES[from_currency]
     return base_amount * CURRENCY_RATES[to_currency]
@@ -88,8 +88,8 @@ def unit_convert(category, from_unit, to_unit, value):
 
     try:
         value = float(value)
-    except (TypeError, ValueError):
-        raise ValueError("Value must be a number")
+    except (TypeError, ValueError) as exc:
+        raise ValueError("Value must be a number") from exc
 
     if category == "temperature":
         return _convert_temperature(value, from_unit, to_unit)
