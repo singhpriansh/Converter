@@ -6,24 +6,23 @@ A small full-stack app for converting currency and common units. It includes a P
 
 1. Create a virtual environment:
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
+    ```powershell
+    python -m venv venv
+    ```
 
 2. Install dependencies:
 
-```powershell
-pip install -r requirements.txt
-```
+    ```powershell
+    pip install -r requirements.txt
+    ```
 
 3. Start the app:
 
-```powershell
-python app.py
-```
+    ```powershell
+    python app.py
+    ```
 
-4. Open http://localhost:5000 in your browser.
+4. Open [http://localhost:5000](http://localhost:5000) in your browser.
 
 ## API Endpoints
 
